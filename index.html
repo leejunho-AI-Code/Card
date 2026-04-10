@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>이준호 — 4T시큐리티 CTO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Outfit:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-pattern" aria-hidden="true"></div>
+  <main class="card" id="card">
+    <div class="card__visual">
+      <div class="character" role="img" aria-label="캐릭터 프로필 일러스트">
+        <svg class="character__svg" viewBox="0 0 220 270" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="face-grad" cx="35%" cy="25%" r="75%">
+              <stop offset="0%" stop-color="#ffe8dc"/>
+              <stop offset="50%" stop-color="#f5c9b0"/>
+              <stop offset="100%" stop-color="#e0a88e"/>
+            </radialGradient>
+            <linearGradient id="hair-grad" x1="20%" y1="0%" x2="80%" y2="100%">
+              <stop offset="0%" stop-color="#3d2c28"/>
+              <stop offset="50%" stop-color="#5c433c"/>
+              <stop offset="100%" stop-color="#2a1f1c"/>
+            </linearGradient>
+            <linearGradient id="hood-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#4a5f8a"/>
+              <stop offset="100%" stop-color="#2d3a58"/>
+            </linearGradient>
+            <linearGradient id="lens-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="rgba(200,230,255,0.55)"/>
+              <stop offset="100%" stop-color="rgba(120,170,230,0.2)"/>
+            </linearGradient>
+            <linearGradient id="halo-grad" x1="50%" y1="0%" x2="50%" y2="100%">
+              <stop offset="0%" stop-color="rgba(255,190,200,0.25)"/>
+              <stop offset="100%" stop-color="rgba(124,156,255,0)"/>
+            </linearGradient>
+          </defs>
+
+          <ellipse cx="110" cy="262" rx="64" ry="8" fill="rgba(0,0,0,0.16)"/>
+          <ellipse cx="110" cy="122" rx="90" ry="96" fill="url(#halo-grad)"/>
+
+          <!-- 후드티 -->
+          <path d="M16 270 L16 232 Q16 198 42 178 L42 268 L178 268 L178 178 Q204 198 204 232 L204 270 Z" fill="url(#hood-grad)"/>
+          <path d="M42 178 L72 162 L110 176 L148 162 L178 178 L110 196 Z" fill="#1e2740"/>
+          <ellipse cx="110" cy="172" rx="28" ry="14" fill="#2a3550"/>
+          <path d="M88 172 L110 188 L132 172 Q110 178 88 172" fill="#eef1f8"/>
+
+          <!-- 뒤통수·윗머리 (얼굴 아래 레이어) -->
+          <ellipse cx="110" cy="56" rx="82" ry="38" fill="url(#hair-grad)"/>
+          <path d="M18 115 C18 48 202 48 202 115 L202 125 C190 95 155 70 110 66 C65 70 30 95 18 125 Z" fill="url(#hair-grad)"/>
+
+          <!-- 목 -->
+          <path d="M90 172 L90 156 Q110 164 130 156 L130 172 Q110 180 90 172 Z" fill="url(#face-grad)"/>
+
+          <!-- 얼굴 -->
+          <ellipse cx="110" cy="118" rx="64" ry="70" fill="url(#face-grad)" stroke="#d4a088" stroke-width="1"/>
+          <ellipse cx="110" cy="152" rx="32" ry="14" fill="#e8a090" opacity="0.1"/>
+
+          <!-- 귀 -->
+          <ellipse cx="34" cy="120" rx="9" ry="13" fill="url(#face-grad)" stroke="#d4a088" stroke-width="0.8"/>
+          <ellipse cx="186" cy="120" rx="9" ry="13" fill="url(#face-grad)" stroke="#d4a088" stroke-width="0.8"/>
+
+          <!-- 앞머리 (이마 위) -->
+          <path d="M44 70 C50 48 170 48 176 70 C174 88 162 96 138 86 C128 76 118 80 110 88 C102 80 92 76 82 86 C58 96 46 88 44 70 Z" fill="#4a3832"/>
+          <path d="M50 76 Q110 60 170 76 Q152 92 110 86 Q68 92 50 76" fill="#5c483f" opacity="0.88"/>
+          <path d="M68 66 Q110 56 152 66" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="2" stroke-linecap="round"/>
+
+          <!-- 눈썹 (가늘게) -->
+          <path d="M58 96 Q76 90 94 94" stroke="#3d2c28" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M126 94 Q144 90 162 96" stroke="#3d2c28" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+          <!-- 둥근 안경 -->
+          <g fill="none" stroke="#7a8ca8" stroke-width="1.6" stroke-linejoin="round">
+            <circle cx="78" cy="118" r="22" fill="url(#lens-grad)" stroke="#8fa0b8"/>
+            <circle cx="142" cy="118" r="22" fill="url(#lens-grad)" stroke="#8fa0b8"/>
+            <path d="M100 118h20"/>
+            <path d="M56 114 L44 108"/>
+            <path d="M164 114 L176 108"/>
+          </g>
+
+          <!-- 눈 (크게) -->
+          <ellipse cx="78" cy="118" rx="7.5" ry="9" fill="#252830"/>
+          <ellipse cx="142" cy="118" rx="7.5" ry="9" fill="#252830"/>
+          <ellipse cx="80" cy="115" rx="2.8" ry="3.2" fill="#fff"/>
+          <ellipse cx="144" cy="115" rx="2.8" ry="3.2" fill="#fff"/>
+          <circle cx="75" cy="120" r="1.2" fill="#fff" opacity="0.7"/>
+
+          <!-- 코 (짧게) -->
+          <ellipse cx="110" cy="134" rx="5" ry="4" fill="#e8a090" opacity="0.35"/>
+
+          <!-- 입 -->
+          <path d="M96 154 Q110 162 124 154" fill="none" stroke="#d08078" stroke-width="2.2" stroke-linecap="round"/>
+
+          <!-- 볼 홍조 -->
+          <ellipse cx="54" cy="136" rx="14" ry="9" fill="#ff9e9e" opacity="0.28"/>
+          <ellipse cx="166" cy="136" rx="14" ry="9" fill="#ff9e9e" opacity="0.28"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="card__body">
+      <p class="card__badge">4T Security</p>
+      <h1 class="card__name">이준호</h1>
+      <p class="card__role">4T시큐리티 CTO</p>
+      <blockquote class="card__tagline">AI와 함께 놀고 있습니다. 같이 노실 분?</blockquote>
+
+      <ul class="card__contacts">
+        <li class="contact-row">
+          <a class="contact-link" href="mailto:admin@4tsecurity.co.kr">
+            <span class="contact-link__icon" aria-hidden="true">✉</span>
+            <span>admin@4tsecurity.co.kr</span>
+          </a>
+          <button type="button" class="copy-btn" data-copy="admin@4tsecurity.co.kr" aria-label="이메일 주소 복사">복사</button>
+        </li>
+        <li class="contact-row">
+          <a class="contact-link" href="tel:+821011111111">
+            <span class="contact-link__icon" aria-hidden="true">☎</span>
+            <span>010-1111-1111</span>
+          </a>
+          <button type="button" class="copy-btn" data-copy="010-1111-1111" aria-label="전화번호 복사">복사</button>
+        </li>
+        <li class="contact-row contact-row--full">
+          <a class="btn-linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+            <svg class="btn-linkedin__icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            LinkedIn
+          </a>
+          <button type="button" class="copy-btn copy-btn--sub" data-copy="https://www.linkedin.com/" aria-label="LinkedIn URL 복사">URL 복사</button>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <p class="toast" id="toast" role="status" aria-live="polite"></p>
+  <script src="script.js"></script>
+</body>
+</html>
